@@ -67,3 +67,6 @@ target/classes/com/zzgproject/commitfile/GrzxCommitFiles.class
 target/classes/com/zzgproject/commitfile/GrzxCommitFiles.class
 *.class
 *.class
+target/classes/com/zzgproject/commitfile/GrzxCommitFiles.class
+target/classes/com/zzgproject/commitfile/MsctCommitFiles.class
+target/classes/com/zzgproject/crypt/Base64.class
