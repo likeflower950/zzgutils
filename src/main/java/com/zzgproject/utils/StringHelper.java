@@ -29,8 +29,6 @@ public class StringHelper {
 	public static boolean isEmpty(String str){
 		if(null == str) return true;
 		if("".equals(str)) return true;
-		if("null".equals(str)) return true;
-		if("undefined".equals(str)) return true;
 		return false;
 	}
 	
