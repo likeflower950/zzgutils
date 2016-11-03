@@ -65,3 +65,5 @@ Temporary Items
 .apdisk
 target/classes/com/zzgproject/commitfile/GrzxCommitFiles.class
 target/classes/com/zzgproject/commitfile/GrzxCommitFiles.class
+*.class
+*.class
