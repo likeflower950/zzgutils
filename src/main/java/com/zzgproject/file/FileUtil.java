@@ -2,10 +2,12 @@ package com.zzgproject.file;
 
 import java.io.File;
 import java.io.IOException;
+import java.security.MessageDigest;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.lang.StringUtils;
 
 public class FileUtil {
 
@@ -25,12 +27,12 @@ public class FileUtil {
         System.out.println(dir.exists());
         
         /**
-         * FileUtils.cleanDirectory(dir) : 清空文件夹中的所有文件和文件夹
+         * FileUtils.cleanDirectory(dir) : 清空文件夹中的所有文件和文件夹，但不包括文件夹本身
          */
         if(dir.exists()) FileUtils.cleanDirectory(dir);
         
         /**
-         * 使用JDK的File对象是无法直接删除文件夹的
+         * 注意：使用JDK的File对象是无法直接删除文件夹的
          * 
          * FileUtils.deleteDirectory(dir) : 直接删除文件夹
          */
@@ -66,5 +68,9 @@ public class FileUtil {
         
         
         System.out.println(FilenameUtils.getName(file.getPath()));
+        
     }
+    
+    
+    
 }
